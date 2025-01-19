@@ -1,4 +1,4 @@
-# b-plus-tree-c
+# B+tree in C
 A B+tree Implementation in C
 
 ## Notes
@@ -9,8 +9,9 @@ A B+tree Implementation in C
 * Level starts from 1 (i.e. root sits at level 1)
 * For all search field values `X` in the subtree pointed at by `P_i`, we have `K_{i−1} < X ≤ K_i` for 1 < `i` < `q`; `X ≤ K_i` for `i = 1`; and `K_{i−1} < X` for `i = q`
 * Keys == search field values; values/data == data file record
+* a good visualization tool: https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html
 
-## Quick Start
+
 ## Quick Start
 all you have to do is:
 ```c
