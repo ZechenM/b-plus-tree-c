@@ -24,6 +24,7 @@ in main.c
 
 ## TODOs
 * single linked-list on the leaf level (if there is a need to implement it, which I don't find one yet)
+* deletion?
 
 ## References
 * Thanks to [@bigjr-mkkong](https://github.com/bigjr-mkkong): https://oi-wiki.org/ds/bplus-tree/
