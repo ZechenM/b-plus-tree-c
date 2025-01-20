@@ -10,6 +10,7 @@ A B+tree Implementation in C
 * For all search field values `X` in the subtree pointed at by `P_i`, we have `K_{i−1} < X ≤ K_i` for 1 < `i` < `q`; `X ≤ K_i` for `i = 1`; and `K_{i−1} < X` for `i = q`
 * Keys == search field values; values/data == data file record
 * a good visualization tool: https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html
+  * NOTE: this visualization defines as such: `K_{i−1} <= X < K_i` for 1 < `i` < `q`; `X < K_i` for `i = 1`; and `K_{i−1} <= X` for `i = q`, which differs from this design
 
 
 ## Quick Start
