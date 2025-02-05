@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include "util.h"
+#include "time.h"
 
 // typedef unsigned int uint32_t;
 // typedef unsigned long int uint64_t;
@@ -14,12 +16,12 @@
 typedef struct BPTreeNode {
     // 0 + 4 * (3+1) = 16 bytes
     uint32_t keys[MAX_KEYS + 1];
-    // TODO: RECALCULATE THE SIZE OF THE STRUCTURE
-    // 16 + 8 * 5 = 48 bytes
+    // 16 + 8 * (4+1) = 56 bytes
     void *ptrs[MAX_PTRS + 1];
-    // 48 + 4 = 52 bytes
+    // 56 + 4 = 60 bytes
     // the actual number of keys on the node
     uint32_t num_keys;
+    // TODO: RECALCULATE THE SIZE OF THE STRUCTURE
     // 52 + 2 = 54 bytes
     uint16_t level;
     // 54 + 2 = 56 bytes
